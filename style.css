@@ -1,0 +1,96 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: normal;
+  font-size: 16px;
+  font-style: normal;
+  overflow-x: hidden; /* чтобы не появлялась полоса прокрутки, если элемент выйдет за границы*/
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto; /* Что бы соблюдались пропорции */
+  vertical-align: middle;
+}
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin-inline: auto;
+}
+.header {
+  min-height: 80px;
+  padding: 14px 0;
+  margin: 0 0 40px 0;
+  background-color: cornsilk;
+}
+.header__wrapper {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 0;
+}
+
+.goods-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 12px;
+}
+
+.goods-item {
+  width: 100%;
+  max-width: 360px;
+  min-height: 100%;
+  background-color: cornsilk;
+}
+
+.goods-item p {
+  font-size: 16px;
+  color: red;
+  margin-bottom: 12px;
+}
+.goods-item h3 {
+  font-size: 24px;
+}
+
+.btn {
+  padding: 14px 24px;
+  background-color: steelblue;
+  font-size: 14px;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+
+  transition: transform ease 0.2ms;
+}
+.btn:hover {
+  background-color: rgba(90, 152, 208, 0.9);
+}
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-buy {
+  display: block;
+  padding: 8px 14px;
+  border-radius: 5px;
+  background-color: steelblue;
+  font-size: 16px;
+  color: white;
+}
